@@ -79,8 +79,8 @@ class Swin_transformer(nn.Module):
             )
 
     def forward(self, x):
-        x = x if isinstance(x, tuple) else tuple(x)
-        x = torch.cat(x, dim=1)
+        # x = x if isinstance(x, tuple) else tuple(x)
+        # x = torch.cat(x, dim=1)
         _, _, H, W = x.shape
         x = self.build_backbone(x)
         aux_x = x[-2] if self.aux else None
