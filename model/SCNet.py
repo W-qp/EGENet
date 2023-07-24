@@ -4,15 +4,6 @@ import torch.nn.functional as F
 
 
 class SCNet(nn.Module):
-    """
-    Illustrate:
-        The reproduction of this model is different from the original paper, for reference only.
-
-        It is written in the original paper that the encoding attention module shares weights, but
-    it does not seem to give the width of the network. At the same time, the width of each stage of
-    the network structure diagram is different, which seems to be contradictory to the shared weights.
-    Moreover, considering the deployment complexity, the deep supervision strategy has been adjusted.
-    """
     def __init__(self, n_classes, in_chans=3, dim=64):
         super(SCNet, self).__init__()
         self.n_classes = n_classes
@@ -40,8 +31,8 @@ class SCNet(nn.Module):
 
 
     def forward(self, x):
-        x = x if isinstance(x, tuple) else tuple(x)
-        x = torch.cat(x, dim=1)
+        # x = x if isinstance(x, tuple) else tuple(x)
+        # x = torch.cat(x, dim=1)
         h, w = x.shape[2:]
         x1 = self.inc(x)
         x2 = self.down1(x1)
