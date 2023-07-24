@@ -6,7 +6,6 @@ from torch.nn import Module, Conv2d, Parameter
 
 
 def conv3otherRelu(in_planes, out_planes, kernel_size=None, stride=None, padding=None):
-    # 3x3 convolution with padding and relu
     if kernel_size is None:
         kernel_size = 3
     assert isinstance(kernel_size, (int, tuple)), 'kernel_size is not in (int, tuple)!'
