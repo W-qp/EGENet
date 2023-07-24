@@ -8,7 +8,7 @@ from timm.models.layers import DropPath, trunc_normal_, to_2tuple
 
 class EGENet(nn.Module):
     """
-    Build EGENet model
+    Build EGENet model.
 
     Args:
         n_classes (int): Number of probabilities you want to get per pixel.
