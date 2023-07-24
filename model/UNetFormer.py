@@ -364,8 +364,8 @@ class UNetFormer(nn.Module):
         self.decoder = Decoder(encoder_channels, decode_channels, dropout, window_size, n_classes)
 
     def forward(self, x):
-        x = x if isinstance(x, tuple) else tuple(x)
-        x = torch.cat(x, dim=1)
+        # x = x if isinstance(x, tuple) else tuple(x)
+        # x = torch.cat(x, dim=1)
         h, w = x.size()[-2:]
         res1, res2, res3, res4 = self.backbone(x)
         aux = self.aux if self.training else False
