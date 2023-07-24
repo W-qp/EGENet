@@ -157,8 +157,8 @@ class MANet(nn.Module):
         self.finalconv3 = nn.Conv2d(32, n_classes, 3, padding=1)
 
     def forward(self, x):
-        x = x if isinstance(x, tuple) else tuple(x)
-        x = torch.cat(x, dim=1)
+        # x = x if isinstance(x, tuple) else tuple(x)
+        # x = torch.cat(x, dim=1)
         # Encoder
         e1, e2, e3, e4 = self.backbone(x)
 
