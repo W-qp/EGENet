@@ -6,9 +6,9 @@ from einops import rearrange
 from timm.models.layers import DropPath, trunc_normal_, to_2tuple
 
 
-class U(nn.Module):
+class EGENet(nn.Module):
     """
-    TODO:Build EF-UNet model
+    TODO:Build EGENet model
 
     Args:
         n_classes (int): Number of probabilities you want to get per pixel.
@@ -39,7 +39,7 @@ class U(nn.Module):
                  patch_size=1,
                  qkv_bias=True,
                  aux=True):
-        super(U, self).__init__()
+        super(EGENet, self).__init__()
         self.n_classes = n_classes
         self.use_stem = False if patch_size == 1 else True
         self.aux = aux
