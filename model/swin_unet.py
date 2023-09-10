@@ -750,7 +750,7 @@ class SwinTransformerSys(nn.Module):
         return x
 
     def forward(self, x):
-        x = x if isinstance(x, tuple) else tuple(x)
+        x = x if isinstance(x, tuple or list) else tuple([x])
         x = torch.cat(x, dim=1)
         x, x_downsample = self.forward_features(x)
         x = self.forward_up_features(x, x_downsample)

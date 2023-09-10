@@ -298,7 +298,7 @@ class ABCNet(nn.Module):
         self.init_weight()
 
     def forward(self, x):
-        x = x if isinstance(x, tuple) else tuple(x)
+        x = x if isinstance(x, tuple or list) else tuple([x])
         x = torch.cat(x, dim=1)
 
         H, W = x.size()[2:]

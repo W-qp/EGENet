@@ -336,7 +336,7 @@ class DeepLab(nn.Module):
         self.cls_conv = nn.Conv2d(256, n_classes, 1, stride=1)
 
     def forward(self, x):
-        x = x if isinstance(x, tuple) else tuple(x)
+        x = x if isinstance(x, tuple or list) else tuple([x])
         x = torch.cat(x, dim=1)
 
         _, _, H, W = x.shape

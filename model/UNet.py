@@ -21,7 +21,7 @@ class UNet(nn.Module):
         self.outc = OutConv(c1, n_classes)
 
     def forward(self, x):
-        x = x if isinstance(x, tuple) else tuple(x)
+        x = x if isinstance(x, tuple or list) else tuple([x])
         x = torch.cat(x, dim=1)
         x1 = self.inc(x)
         x2 = self.down1(x1)

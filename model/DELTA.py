@@ -64,7 +64,7 @@ class DELTA(nn.Module):
         self.decoder = FPN(encoder_channels, 4, decode_channels, n_classes)
 
     def forward(self, x):
-        x = x if isinstance(x, tuple) else tuple(x)
+        x = x if isinstance(x, tuple or list) else tuple([x])
         x = torch.cat(x, dim=1)
         h, w = x.shape[2:]
 
