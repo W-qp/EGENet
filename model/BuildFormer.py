@@ -466,7 +466,7 @@ class BuildFormerSegDP(nn.Module):
             nn.init.constant_(m.bias, 0)
 
     def forward(self, x):
-        x = x if isinstance(x, tuple or list) else tuple([x])
+        x = x if isinstance(x, tuple and list) else tuple([x])
         x = torch.cat(x, dim=1)
         sz = x.size()[-2:]
         dp = self.dp(x)

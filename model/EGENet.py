@@ -72,7 +72,7 @@ class EGENet(nn.Module):
         self.decoder = Decoder(decoder_heads, encoder_channels, decoder_chans, qkv_bias, drop, window_size, n_classes)
 
     def forward(self, x):
-        x = x if isinstance(x, tuple or list) else tuple([x])
+        x = x if isinstance(x, tuple and list) else tuple([x])
         x = torch.cat(x, dim=1)
         _, _, h, w = x.shape
         x = self.stem(x) if self.use_stem else x

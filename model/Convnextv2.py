@@ -54,7 +54,7 @@ class ConvNext_v2(nn.Module):
             )
 
     def forward(self, x):
-        x = x if isinstance(x, tuple or list) else tuple([x])
+        x = x if isinstance(x, tuple and list) else tuple([x])
         x = torch.cat(x, dim=1)
         _, _, H, W = x.shape
         x = self.build_backbone(x)

@@ -463,7 +463,7 @@ class HighResolutionNet(nn.Module):
         return nn.Sequential(*modules), num_inchannels
 
     def forward(self, x):
-        x = x if isinstance(x, tuple or list) else tuple([x])
+        x = x if isinstance(x, tuple and list) else tuple([x])
         x = torch.cat(x, dim=1)
         _, _, h, w = x.shape
 
