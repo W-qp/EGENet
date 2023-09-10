@@ -17,7 +17,7 @@ class ConvNext_v2(nn.Module):
                  fpn_chans=256,
                  fpn_norm_layer='BN',
                  fpn_act_layer=nn.ReLU,
-                 aux=False):
+                 aux=True):
         super().__init__()
         self.n_classes = n_classes
         self.aux = aux
@@ -116,7 +116,7 @@ class ConvNeXtV2(nn.Module):
     """
     def __init__(self, in_chans=3, num_classes=1000, 
                  depths=[3, 3, 9, 3], dims=[96, 192, 384, 768], 
-                 drop_path_rate=0.2, head_init_scale=1.
+                 drop_path_rate=0., head_init_scale=1.
                  ):
         super().__init__()
         self.depths = depths
