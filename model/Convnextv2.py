@@ -354,7 +354,3 @@ def convnextv2_large(**kwargs):
 def convnextv2_huge(**kwargs):
     model = ConvNeXtV2(depths=[3, 3, 27, 3], dims=[352, 704, 1408, 2816], **kwargs)
     return model
-
-img = torch.ones([2, 3, 512, 512]).cuda()
-net = ConvNext_v2(2).cuda()
-pred = net(img)
