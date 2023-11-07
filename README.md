@@ -9,7 +9,7 @@ If you find it useful, please help us cite +1
 　 　　 　／` ミ＿xノ  
 　　 　 /　　　 　 |  
 　　　 /　 ヽ　　 ﾉ  
-　 　 │　　|　|　|  
+　 　 │　 　|　|　|  
 　／￣|　　 |　|　|  
-　| (￣ヽ＿_ヽ_)__)  
+　| (￣ヽ___ ヽ__)__)  
 　＼二つ  
