@@ -3,12 +3,12 @@ A lightweight and scalable greenhouse mapping method based on remote sensing ima
 
 ------------------------------
 If you find it useful, please help us cite +1  
-　　　　 　　 ＿ ＿  
+　　　　 　　 ＿＿  
 　　　 　　／＞　　フ  
-　　　 　　| 　_　 _ l  
+　　　 　　| 　_　 _ l   
 　 　　 　／` ミ＿xノ  
-　　 　 /　　　 　 |  
-　　　 /　 ヽ　　 ﾉ  
+　　 　  /　　　 　 |   
+　　　 /　 ヽ　　 ﾉ   
 　 　 │　 　|　|　|  
 　／￣|　　 |　|　|  
 　| (￣ヽ___ ヽ__)__)  
