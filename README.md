@@ -2,7 +2,7 @@
 Chen W, Wang Q, Wang D, et al. A lightweight and scalable greenhouse mapping method based on remote sensing imagery[J]. International Journal of Applied Earth Observation and Geoinformation, 2023, 125: 103553. DOI: [https://doi.org/10.1016/j.jag.2023.103553](https://doi.org/10.1016/j.jag.2023.103553)
 
 ------------------------------
-If you find it useful, please help us cite +1  
+If you find it useful, please help us cite +1 ( =ω=)  
 　　　　 　　 ＿ ＿  
 　　　 　　／＞　　フ  
 　　　 　　| 　_　 _ l   
